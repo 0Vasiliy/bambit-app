@@ -90,6 +90,6 @@ onMounted(() => {
   color: #ffffff;
 }
 .max-w-4xl{
-  max-width: 600px;
+  max-width: 600px !important;
 }
 </style>
