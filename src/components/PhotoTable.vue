@@ -1,12 +1,12 @@
-<template>
+ <template>
   <div class="flex justify-center items-center">
     <!-- Контейнер для таблицы -->
     <div
       ref="tableContainer"
       class="foto-table overflow-auto border border-gray-300 rounded-lg shadow-lg dark:bg-gray-700 dark:text-white w-full max-w-[600px] h-[400px] sm:h-[500px] md:h-[600px]"
     >
-      <table class="table-auto w-full">
-        <thead class="sticky top-0 bg-slate-950 text-white">
+      <table class="table-auto w-full table-h">
+        <thead class="sticky top-0 bg-slate-950 text-white table-h">
           <tr>
             <!-- Заголовки таблицы с возможностью сортировки -->
             <th @click="sort('id')" class="cursor-pointer p-2 text-sm sm:text-base">Ид</th>
@@ -112,4 +112,9 @@ onUnmounted(() => {
     tableContainer.value.removeEventListener('scroll', handleScroll);
   }
 });
-</script>
+</script> 
+<style>
+.table-h{
+  pointer-events: none;
+}
+</style>
