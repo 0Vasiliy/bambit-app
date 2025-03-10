@@ -86,8 +86,8 @@ onMounted(() => {
   height: 100vh;
 }
 .dark {
-  background-color: #1a202c;
-  color: #ffffff;
+  background-color: #1a202c !important;
+  color: #ffffff !important;
 }
 .max-w-4xl{
   max-width: 600px !important;
