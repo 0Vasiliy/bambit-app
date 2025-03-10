@@ -5,8 +5,8 @@
       ref="tableContainer"
       class="foto-table overflow-auto border border-gray-300 rounded-lg shadow-lg dark:bg-gray-700 dark:text-white w-full max-w-[600px] h-[400px] sm:h-[500px] md:h-[600px]"
     >
-      <table class="table-auto w-full table-h">
-        <thead class="sticky top-0 bg-slate-950 text-white table-h">
+      <table class="table-auto w-full">
+        <thead class="sticky top-0 bg-slate-950 text-white">
           <tr>
             <!-- Заголовки таблицы с возможностью сортировки -->
             <th @click="sort('id')" class="cursor-pointer p-2 text-sm sm:text-base">Ид</th>
@@ -113,8 +113,3 @@ onUnmounted(() => {
   }
 });
 </script> 
-<style>
-.table-h{
-  pointer-events: none;
-}
-</style>
